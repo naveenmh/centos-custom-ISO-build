@@ -26,3 +26,14 @@ The key points to be noted here...
 10. Make sure that you resolve all the deppendency errors after running the script "Custom_iso_builder.sh" else the BUILD is 'NOT OK!'
  
 11. It works fine for CentOS But not tested on Other OS's I think its almost same for other OS also except Anaconda Installer!!!
+
+12. Once it successfully runs means, the iso will be available in /tmp and its ready for BURN!!!
+ 
+13. You can burn ISO to CD/DVD(using xfburn, k3b, growisofs etc...) or to USB stick(u can use 'dd' command or 'livecd' tools)
+ 
+14. For USB, u need KS file as per the isolinux.cfg u modify... :)
+
+15. My ks.cfg and isolinux.cfg files are given above.
+
+
+feel free to contact if u have any doubts/help ### naveen.mh08@gmail.com ###
