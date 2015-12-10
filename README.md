@@ -23,6 +23,6 @@ The key points to be noted here...
 
 9. Once everything OK you just run this script "Custom_iso_builder.sh"
 
-10. Make sure that you resolve all the deppendency errors after running the script "Custom_iso_builder.sh"
-
-11. 
+10. Make sure that you resolve all the deppendency errors after running the script "Custom_iso_builder.sh" else the BUILD is 'NOT OK!'
+ 
+11. It works fine for CentOS But not tested on Other OS's I think its almost same for other OS also except Anaconda Installer!!!
