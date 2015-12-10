@@ -33,7 +33,7 @@ The key points to be noted here...
  
 14. For USB, u need KS file as per the isolinux.cfg u modify... :)
 
-15. My ks.cfg and isolinux.cfg files are given above.
+15. My example ks.cfg, splash.jpg and isolinux.cfg files are given above.
 
 
 feel free to contact if u have any doubts/help ### naveen.mh08@gmail.com ###
