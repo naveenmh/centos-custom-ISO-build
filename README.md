@@ -1,39 +1,33 @@
-# CentOS-6.6-Custom-ISO-Build
+Unicell-ISO-Build
 
 The key points to be noted here...
+    
+    For cd_or_vm:    
 
-1. This is tested for CentOS 6.6
+    You need to have a copy of 'CentOS-6.6-x86_64-minimal.iso' in root directory of your centos system/server ie., /root/CentOS-6.6-x86_64-minimal.iso
 
-2. You need to have CentOS-6.6-x86_64-minimal.iso in root Directory ie.,
-        /root/CentOS-6.6-x86_64-minimal.iso
+    Script will install required tools: Ie., yum -y install rsync yum-utils createrepo genisoimage isomd5sum yum-downloadonly
 
-3. Need to have the packages you want in your Custom CentOS Build
+    You need to have all the packages(from PXE) in directory /root/unicell_packages/ and zip files in /root/tar_files and the config files if any in /root/conf_files
 
-4. And the file/s you modified or the Directory you want to have like ks, isolinux.cfg for custom menu, splash.jpg etc...
+    And the file/s you modified or the Directory you want to have like ks, isolinux.cfg for custom menu, splash.jpg etc...(copy these files into /root )
 
+    For all File/Directory you have in, need to change the corresponding file permissions
 
-5. For the File/Directory you have in, need to chenge the corresponding file permissions also
+    So Edit this "Custom_iso_builder.sh" file as per you want like changing file/Directory name as such etc...
 
-6. All these files are should be in /root Directory as per our script
+    File names corresponding to ISO should not 'change!!!' like ks.cfg, isolinux.cfg, splash.jpg, etc...
 
-7. So Edit this "Custom_iso_builder.sh" file as per you want like file/Directory name as such etc...
+    Once everything OK you just run this script "Unicell_auto_ISO-Builder.sh"
 
-8. Keep in mind that the file names corresponding to ISO shoud not 'change!!!' like ks.cfg, isolinux.cfg, splash.jpg, etc...
+    Make sure that you resolve all the deppendency errors after running the script "Unicell_auto_ISO-Builder.sh" else the BUILD is 'NOT OK!'
 
+    It works fine for CentOS But not tested for Other OS's
 
-9. Once everything OK you just run this script "Custom_iso_builder.sh"
+    Once the script successfully runs means, the ISO will be available in /tmp and its ready to BURN!!!
 
-10. Make sure that you resolve all the deppendency errors after running the script "Custom_iso_builder.sh" else the BUILD is 'NOT OK!'
- 
-11. It works fine for CentOS But not tested on Other OS's I think its almost same for other OS also except Anaconda Installer!!!
+    You can burn ISO to CD/DVD(using xfburn, k3b, growisofs etc...) or to USB* stick(u can use 'dd' command or 'livecd' tools)
 
-12. Once it successfully runs means, the iso will be available in /tmp and its ready for BURN!!!
- 
-13. You can burn ISO to CD/DVD(using xfburn, k3b, growisofs etc...) or to USB stick(u can use 'dd' command or 'livecd' tools)
- 
-14. For USB, u need KS file as per the isolinux.cfg u modify... :)
+    *For USB, u need ks.cfg file as per the isolinux.cfg to be modified and the separete directory called 'usb' is having all the modyfied files
+    Cheers.... :)
 
-15. My example ks.cfg, splash.jpg and isolinux.cfg files are given above.
-
-
-feel free to contact if u have any doubts/help ### naveen.mh08@gmail.com ###
