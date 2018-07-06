@@ -29,5 +29,5 @@ The key points to be noted here...
     12. You can burn ISO to CD/DVD(using xfburn, k3b, growisofs etc...) or to USB* stick(u can use 'dd' command or 'livecd' tools)
 
     *For USB, u need ks.cfg file as per the isolinux.cfg to be modified and the separete directory called 'usb' is having all the modyfied files
-    Cheers.... :)
+    Cheers..... :)
 
